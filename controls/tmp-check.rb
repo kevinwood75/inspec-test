@@ -1,6 +1,7 @@
-control 'tmp-1.0' do
+control 'tmp' do
   impact 0.7
-  title 'Create /tmp/directory'
+  title 'tmp'
+  desc "tmp"
   describe file ('/tmp') do
     it { should be_directory }
     its('owner') { should eq 'root' }
